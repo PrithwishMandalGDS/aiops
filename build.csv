@@ -1,0 +1,91 @@
+Category	Block		Arguments	Values	Values	Values	Values	Values	Values
+Current Info			Researcher Name	Chris Mow					
+			Data Classifier	Hipaa	Hipaa	Hipaa	Hipaa	Hipaa	Hipaa
+			On-Prem Server Name	playback2	playback9	cellavision-convert	rc-higgins-services	librejourney	winfas32
+NIC	General		No of Nics	1	1	1	1	1	1
+			location	East US 2	East US 2	East US 2	East US 2	East US 2	East US 2
+			name	nic-zmghpathapp1	nic-zmghpathapp2	nic-zmghpathapp3	nic-zmghpathapp4	nic-zmghpathapp5	nic-zmghpathapp6
+			resource_group_name	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg
+	IPConfiguration		name	ipconfig-zmghpathapp1	ipconfig-zmghpathapp2	ipconfig-zmghpathapp3	ipconfig-zmghpathapp4	ipconfig-zmghpathapp5	ipconfig-zmghpathapp6
+			subnet_id	mgb-dipr-hipaahitrust92-p-e2-app-sub	mgb-dipr-hipaahitrust92-p-e2-app-sub	mgb-dipr-hipaahitrust92-p-e2-app-sub	mgb-dipr-hipaahitrust92-p-e2-app-sub	mgb-dipr-hipaahitrust92-p-e2-app-sub	mgb-dipr-hipaahitrust92-p-e2-app-sub
+			private_ip_address_version	IPv4	IPv4	IPv4	IPv4	IPv4	IPv4
+			private_ip_address_allocation	Static	Static	Static	Static	Static	Static
+			primary	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE
+			private_ip_address (only if private_ip_address_allocation = Static)	10.146.0.5	10.146.0.6	10.146.0.7	10.146.0.8	10.146.0.9	10.146.0.10
+VM	General		admin_password	P@$$w0rd@1234	P@$$w0rd@1234	P@$$w0rd@1234	P@$$w0rd@1234	P@$$w0rd@1234	P@$$w0rd@1234
+			admin_username	root	root	root	root	root	root
+			location	East US 2	East US 2	East US 2	East US 2	East US 2	East US 2
+			name	zmghpathapp1	zmghpathapp2	zmghpathapp3	zmghpathapp4	zmghpathapp5	zmghpathapp6
+			computer_name	zmghpathapp1	zmghpathapp2	zmghpathapp3	zmghpathapp4	zmghpathapp5	zmghpathapp6
+			network_interface_ids	nic-zmghpathapp1	nic-zmghpathapp2	nic-zmghpathapp3	nic-zmghpathapp4	nic-zmghpathapp5	nic-zmghpathapp6
+			resource_group_name	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg	mgh-path-hipaahitrust92-p-e2-rg
+			size	Standard_DS4_v2	Standard_DS4_v2	Standard_DS4_v2	Standard_DS4_v2	Standard_DS4_v2	Standard_DS4_v2
+			allow_extension_operations	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+			availability_set_id	null	null	null	null	null	null
+			disable_password_authentication	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+			capacity_reservation_group_id	null	null	null	null	null	null
+			custom_data	null	null	null	null	null	null
+			dedicated_host_id	null	null	null	null	null	null
+			dedicated_host_group_id	null	null	null	null	null	null
+			edge_zone	null	null	null	null	null	null
+			encryption_at_host_enabled	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+			eviction_policy	null	null	null	null	null	null
+			max_bid_price	-1	-1	-1	-1	-1	-1
+			patch_mode	ImageDefault	ImageDefault	ImageDefault	ImageDefault	ImageDefault	ImageDefault
+			platform_fault_domain	null	null	null	null	null	null
+			priority	Regular	Regular	Regular	Regular	Regular	Regular
+			provision_vm_agent	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+			proximity_placement_group_id	null	null	null	null	null	null
+			source_image_id	null	null	null	null	null	null
+			user_data	null	null	null	null	null	null
+			virtual_machine_scale_set_id	null	null	null	null	null	null
+			zone	null	null	null	null	null	null
+	identity		type	SystemAssigned	SystemAssigned	SystemAssigned	SystemAssigned	SystemAssigned	SystemAssigned
+			identity_ids	null	null	null	null	null	null
+	os_disk		caching	ReadWrite	ReadWrite	ReadWrite	ReadWrite	ReadWrite	ReadWrite
+			storage_account_type	StandardSSD_LRS	StandardSSD_LRS	StandardSSD_LRS	StandardSSD_LRS	StandardSSD_LRS	StandardSSD_LRS
+		diff_disk_settings	option	Local	Local	Local	Local	Local	Local
+			placement	CacheDisk	CacheDisk	CacheDisk	CacheDisk	CacheDisk	CacheDisk
+			disk_encryption_set_id	null	null	null	null	null	null
+			disk_size_gb	84	84	84	84	84	84
+			name	os-zmghpathapp1	os-zmghpathapp2	os-zmghpathapp3	os-zmghpathapp4	os-zmghpathapp5	os-zmghpathapp6
+			secure_vm_disk_encryption_set_id	null	null	null	null	null	null
+			security_encryption_type	null	null	null	null	null	null
+			write_accelerator_enabled	TRUE	TRUE	TRUE	TRUE	TRUE	TRUE
+	source_image_reference		publisher	Canonical	Canonical	Canonical	Canonical	Canonical	Canonical
+			offer	0001-com-ubuntu-server-jammy	0001-com-ubuntu-server-jammy	0001-com-ubuntu-server-jammy	0001-com-ubuntu-server-jammy	0001-com-ubuntu-server-jammy	0001-com-ubuntu-server-jammy
+			sku	22_04-lts	22_04-lts	22_04-lts	22_04-lts	22_04-lts	22_04-lts
+			version	latest	latest	latest	latest	latest	latest
+Managed Disk	General		No of Managed Disk	0	0	0	0	0	0
+			name                  	null	null	null	null	null	null
+			location              	null	null	null	null	null	null
+			resource_group_name   	null	null	null	null	null	null
+			storage_account_type  	null	null	null	null	null	null
+			create_option         	null	null	null	null	null	null
+			disk_size_gb          	null	null	null	null	null	null
+			disk_encryption_set_id	null	null	null	null	null	null
+Disk Attachment	General		managed_disk_id    	null	null	null	null	null	null
+			virtual_machine_id 	null	null	null	null	null	null
+			lun                	null	null	null	null	null	null
+			caching            	null	null	null	null	null	null
+Tags for NIC, VM, Disk	Tags		Application						
+			ApplicationID						
+			AppOwner						
+			BusinessOwner						
+			BusinessUnit						
+			CIOwner						
+			CostCenter						
+			CostEntity						
+			Criticality						
+			DataClassification						
+			DataComplianceIdentifier						
+			Department						
+			Description						
+			EndDate						
+			Entity						
+			Environment						
+			FundNumber						
+			ManagedBy						
+			Region						
+			ResearchLab						
+			TechnicalOwner						
